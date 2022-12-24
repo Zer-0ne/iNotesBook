@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+
+html {
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar {
+    position: fixed;
+    height: 66px;
+    opacity: 1;
+    z-index: 150;
+}
+
+a {
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0,1);
+    list-style: none;
+    color: white;
+    width: 100vw;
+    padding: 5px 0px;
+    box-shadow: 0px 1px 10px red;
+}
+
+.navbar ul li {
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.list p {
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    border-radius: 50%;
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li:hover p {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    z-index: 100;
+}
+
+.bar {
+    display: none;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.navbar-content {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.logo {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.phone-navbar {
+    display: none;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.search input {
+    display: none;
+}
+
+@media screen and (max-width:850px) {
+    .bar {
+        transition: all 0.5s ease-in-out;
+        z-index: 30;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo span,
+    .phone-navbar i {
+        font-size: 85%;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .phone-navbar {
+        display: flex;
+        transition: all 0.5s ease-in-out;
+
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar-content {
+        display: none;
+        
+        transition: all 0.5s ease-in-out;
+        flex-direction: column;
+    }
+
+    .logo {
+        display: flex;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    .navbar ul {
+        justify-content: space-between;
+        flex-direction: column;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .navbar ul li {
+        display: flex;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+        padding: 7px 20px;
+    }
+
+    .search {
+        display: none;
+        z-index: 10;
+        justify-content: end;
+        margin: 10px 10px;
+    }
+
+    .search input {
+        padding: 9px 10px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 2px black;
+        width: 42%;
+    }
+
+    .search::before {
+        content: '';
+        transform: rotate(45deg);
+        width: 10px;
+        height: 10px;
+        background-color: rgb(66, 65, 65);
+        position: absolute;
+        right: 23px;
+        z-index: -1;
+        top: 68px;
+    }
+
+    .navbar-content .phone-list{
+        padding: 20px 12px;
+        margin: 0 10px;
+        width: 100vh;
+    }
+    .navbar-content .phone-list:hover{
+        color: black;
+        background-color: white
+    }
+
+}

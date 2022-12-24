@@ -1,0 +1,82 @@
+.home-container {
+    padding: 90px 0 0 0;
+    margin: 0 10px;
+    width: 95%;
+}
+
+.add-note {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+.add-note h1 {
+    font-size: 150%;
+}
+
+.add-note input,
+textarea,
+button {
+    margin: 5px 0px;
+    padding: 13px 5px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    outline: none;
+    box-shadow: 0 0 2px black;
+}
+
+.add-btn {
+    background-color: black;
+    width: 20%;
+    color: aqua;
+    border: none;
+    outline: none;
+}
+
+.add-btn:hover {
+    box-shadow: 0 0 3px 1px aqua;
+}
+
+.add-btn:active {
+    margin: 5px 0 5px 7px;
+    width: 19%;
+}
+
+.all-notes {
+    margin: 40px 20px;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1345px) {
+    .cards .card {
+        width: 47%;
+        margin: 10px;
+    }
+    .modal-container .modal{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:725px) {
+    .add-btn {
+        width: 44%;
+    }
+
+    .modal-container .modal{
+        width: 90%;
+    }
+    .cards {
+        align-items: center;
+    }
+
+    .cards .card {
+        width: 100%;
+        margin: 10px 5px;
+    }
+}
